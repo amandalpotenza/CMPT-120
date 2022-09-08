@@ -38,14 +38,14 @@ def main():
 
     #Is it really printing the BEST option though? Rearrange these as you see fit
     toCheck = 5
-    if toCheck == 5:
-        print("toCheck is 5")
-    elif toCheck < 6:
-        print("toCheck is less than 6")
-    elif toCheck > 7:
+    if toCheck > 7:
         print("toCheck is greater than 7")
+    elif toCheck > 6:
+        print("toCheck is greater than 6")
+    elif toCheck == 5:
+        print("toCheck is 5")
     else:
-        print("toCheck is invalid")
+        print("toCheck is less than 5")
     
     
     
