@@ -12,14 +12,14 @@ def bust():
     print("card 1:", card1, "\ncard 2:", card2, "\ncard 3:", card3)
 
     if card1 == 11 or card2 == 11 or card3 == 11:
-        print(card1 + card2 + card3 - 10)
+        return card1 + card2 + card3 - 10
     elif card1 + card2 + card3 < 21:
-        print(card1 + card2 + card3)
+        return card1 + card2 + card3
     else:
-        print(0)
         print("bust!")
-    
+        return 0
+
 def main():
-    bust()
+    print(bust())
 
 main()
