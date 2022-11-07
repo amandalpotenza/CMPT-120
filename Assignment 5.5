@@ -1,1 +1,25 @@
-#cleaning assignment 5.5
+# cleaning assignment 5.5
+
+def main():
+    # ask user for their age in a try statement (the question needs an integer). Anything else should return an error.
+    try:
+        age = int(input("type age here:"))
+
+        # age over 25 can buy: alcohol, nicotine products, and rent a car
+        if age >= 25:
+            print("you can buy alcohol, nicotine products, and rent a car")
+        # age over 21 can buy: alcohol and nicotine products
+        elif age >= 21:
+            print("you can buy alcohol and nicotine products, but you cannot rent a car")
+        # age over 18 can buy: nicotine in some states
+        elif age >= 18:
+            print("you can buy nicotine in some states")
+        # age under 18 can buy: candy cigarettes and sody pops
+        else:
+            print("Sorry! Candy cigarettes and sody pops only!")
+
+    # prints an error if the user does not enter an int
+    except:
+        print("Not an age! Try again.")
+
+main()
