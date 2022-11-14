@@ -30,6 +30,7 @@ gameboard()
 y = 0
 #users take a total of 9 turns unless there is a winner
 while y < 9:
+    #HERE IS THE QUESTION AREA im not sure ahhhhh
     if board[0]=="x" and board[1]=="x" and board[2]=="x":
         print("congrats user 1! ")
         break
